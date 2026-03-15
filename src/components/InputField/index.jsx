@@ -2,14 +2,7 @@ import React from 'react'
 import { View, Text, Input } from '@tarojs/components'
 import './index.scss'
 
-interface InputFieldProps {
-  label: string
-  value: string
-  placeholder?: string
-  editable?: boolean
-}
-
-const InputField: React.FC<InputFieldProps> = ({ 
+const InputField = ({ 
   label, 
   value, 
   placeholder = '', 

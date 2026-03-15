@@ -2,11 +2,7 @@ import React from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
-interface TabBarProps {
-  activeIndex?: number
-}
-
-const TabBar: React.FC<TabBarProps> = ({ activeIndex = 0 }) => {
+const TabBar = ({ activeIndex = 0 }) => {
   return (
     <View className="tab-bar">
       <View className="tab-bar-safe-area">

@@ -3,13 +3,7 @@ import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import './index.scss'
 
-interface NavBarProps {
-  title: string
-  showBack?: boolean
-  showHome?: boolean
-}
-
-const NavBar: React.FC<NavBarProps> = ({ title, showBack = true, showHome = false }) => {
+const NavBar = ({ title, showBack = true, showHome = false }) => {
   const handleBack = () => {
     Taro.navigateBack()
   }

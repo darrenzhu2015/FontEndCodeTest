@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
-const StatusBar: React.FC = () => {
+const StatusBar = () => {
   return (
     <View className="status-bar">
       <View className="status-bar-left">

@@ -6,7 +6,7 @@ import InputField from '../../components/InputField'
 import TabBar from '../../components/TabBar'
 import './index.scss'
 
-const Index: React.FC = () => {
+const Index = () => {
   const [formData, setFormData] = useState({
     account: '12345678901',
     pac: 'xxxxxxxxxx',
