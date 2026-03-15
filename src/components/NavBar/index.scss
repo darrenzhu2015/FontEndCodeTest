@@ -1,0 +1,130 @@
+.nav-bar {
+  height: 44px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  position: relative;
+}
+
+.nav-bar-left {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+
+.back-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron-left {
+  width: 12px;
+  height: 20px;
+  position: relative;
+}
+
+.chevron-line {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 1px;
+  left: 0;
+}
+
+.chevron-line:first-child {
+  top: 6px;
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+.chevron-line:last-child {
+  bottom: 6px;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+.nav-bar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+}
+
+.nav-bar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 80px;
+}
+
+.capsule {
+  width: 87px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+}
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-line {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 1px;
+}
+
+.close-line:first-child {
+  transform: rotate(45deg);
+}
+
+.close-line:last-child {
+  transform: rotate(-45deg);
+}

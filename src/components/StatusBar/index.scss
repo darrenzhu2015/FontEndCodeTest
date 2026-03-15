@@ -1,0 +1,111 @@
+.status-bar {
+  height: 44px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  padding-top: 12px;
+}
+
+.status-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+}
+
+.status-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.signal {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5px;
+  height: 12px;
+}
+
+.signal-bar {
+  width: 3px;
+  background-color: #000000;
+  border-radius: 0.5px;
+}
+
+.signal-bar:nth-child(1) { height: 4px; }
+.signal-bar:nth-child(2) { height: 6px; }
+.signal-bar:nth-child(3) { height: 8px; }
+.signal-bar:nth-child(4) { height: 10px; }
+
+.wifi {
+  display: flex;
+  align-items: center;
+}
+
+.wifi-icon {
+  width: 16px;
+  height: 12px;
+  position: relative;
+}
+
+.wifi-icon::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wifi-icon::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  border: 1.5px solid #000000;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+}
+
+.battery-body {
+  width: 25px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.battery-level {
+  width: 60%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 1px;
+}
+
+.battery-cap {
+  width: 1.5px;
+  height: 4px;
+  background-color: #000000;
+  border-radius: 0 1px 1px 0;
+  margin-left: 1px;
+}
